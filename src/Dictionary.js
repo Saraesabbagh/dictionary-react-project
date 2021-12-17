@@ -24,7 +24,7 @@ export default function Dictionary(props) {
 
     let pexelsApiKey =
       "563492ad6f917000010000011526aee056664c02a6f80e91b544e5d9";
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=4`;
     let headers = { Authorization: `Bearer ${pexelsApiKey}` };
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
@@ -59,10 +59,10 @@ export default function Dictionary(props) {
           <div className="hint">
             Suggested key words: sunset, tennis, coffee...
           </div>
+          <Photos photos={photos} />
         </section>
 
         <Results results={results} />
-        <Photos photos={photos} />
       </div>
     );
   } else {
