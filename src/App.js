@@ -14,7 +14,7 @@ export default function App() {
           <Dictionary defaultKeyword="sunset" />
         </main>
         <footer className="App-footer">
-          Coded by Sara sabbagh and is{" "}
+          Coded by Sara sabbagh and{" "}
           <a
             href="https://github.com/Saraesabbagh/dictionary-react-project"
             target="_blank"
